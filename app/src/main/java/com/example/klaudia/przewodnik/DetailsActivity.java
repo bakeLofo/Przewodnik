@@ -23,17 +23,17 @@ public class DetailsActivity extends Activity implements OnRatingBarChangeListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details_activity);
 
-        rb1 = (RatingBar)findViewById(R.id.ratingBar1);
+       // rb1 = (RatingBar)findViewById(R.id.ratingBar1);
 
-        ((RatingBar) findViewById(R.id.ratingBar1))
-                .setOnRatingBarChangeListener(this);
+        //((RatingBar) findViewById(R.id.ratingBar1))
+       //         .setOnRatingBarChangeListener(this);
         wmbPreference1 = PreferenceManager.getDefaultSharedPreferences(this);
         float rating = wmbPreference1.getFloat(getIntent().getStringExtra("title"), 0f);
-        rb1.setRating(rating);
+//        rb1.setRating(rating);
 
-        Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
-        intent.putExtra("rating", rating);
-        DetailsActivity.this.setResult((int)rating, intent);
+      //  Intent intent = new Intent(DetailsActivity.this, MainActivity.class);
+        //intent.putExtra("rating", rating);
+       // DetailsActivity.this.setResult((int)rating, intent);
 
         String title = getIntent().getStringExtra("title");
         //Bitmap bitmap = getIntent().getParcelableExtra("image");
