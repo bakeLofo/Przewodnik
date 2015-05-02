@@ -4,6 +4,7 @@ package com.example.klaudia.przewodnik;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -73,7 +74,7 @@ public class MainActivity extends Activity {
                 byte[] bytes = stream.toByteArray();
                 intent.putExtra("image", bytes);
 
-                float rating = getIntent().getFloatExtra("rating", 0f);
+               // float rating = getIntent().getFloatExtra("rating", 0f);
 
                 //Start details activity
                 startActivity(intent);
@@ -87,11 +88,13 @@ public class MainActivity extends Activity {
     private ArrayList<ImageItem> getData() {
         final ArrayList<ImageItem> imageItems = new ArrayList<ImageItem>();
         // retrieve String drawable array
+        Resources res = getResources();
+        String[] miejsca = res.getStringArray(R.array.opisy);
         TypedArray imgs = getResources().obtainTypedArray(R.array.image_ids);
         for (int i = 0; i < imgs.length(); i++) {
             Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),
                     imgs.getResourceId(i, -1));
-            imageItems.add(new ImageItem(bitmap, "Picture " + i));
+            imageItems.add(new ImageItem(bitmap, miejsca[i]));
         }
 
         return imageItems;

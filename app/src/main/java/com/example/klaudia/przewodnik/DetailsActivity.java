@@ -28,7 +28,7 @@ public class DetailsActivity extends Activity implements OnRatingBarChangeListen
         //((RatingBar) findViewById(R.id.ratingBar1))
        //         .setOnRatingBarChangeListener(this);
         wmbPreference1 = PreferenceManager.getDefaultSharedPreferences(this);
-        float rating = wmbPreference1.getFloat(getIntent().getStringExtra("title"), 0f);
+        //float rating = wmbPreference1.getFloat(getIntent().getStringExtra("title"), 0f);
 //        rb1.setRating(rating);
 
       //  Intent intent = new Intent(DetailsActivity.this, MainActivity.class);

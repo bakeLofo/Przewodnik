@@ -24,4 +24,29 @@
         <item>@drawable/image20</item>
     </string-array>
 
+    <string-array name="opisy">
+        <item>Rynek</item>
+        <item>Ratusz</item>
+        <item>Ostrów Tumski  i ul. Katedralna</item>
+        <item>Panorama Racławicka</item>
+        <item>\n Hala Stulecia</item>
+        <item>Ogród zoologiczny i Afrykarium</item>
+        <item>\n Ogród japoński</item>
+        <item>\n Ogród botaniczny </item>
+        <item>Pergola i fontanna multimedialna</item>
+        <item>Narodowe Forum Muzyki</item>
+        <item>\n Opera</item>
+        <item>Stadion \n miejski</item>
+        <item>Sky Tower</item>
+        <item>Hala Targowa</item>
+        <item>Dworzec Gł.PKP</item>
+        <item>Teatr \n Capitol</item>
+        <item>Bazylika Św.Elżbiety</item>
+        <item>Pałac \n Królewski</item>
+        <item>Wrocławskie krasnale</item>
+        <item>Kolejka linowa „Polinka”</item>
+
+
+    </string-array>
+
 </resources>
