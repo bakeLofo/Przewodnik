@@ -1,39 +1,109 @@
 package com.example.klaudia.przewodnik;
 
-import android.support.v7.app.ActionBarActivity;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.GridView;
+import android.widget.RatingBar;
 
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+    private GridView gridView;
+    private GridViewAdapter GridAdapter;
+
+    RatingBar rb1;
+    SharedPreferences wmbPreference1;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        gridView = (GridView) findViewById(R.id.gridView);
+        GridAdapter = new GridViewAdapter(this, R.layout.row_grid, getData());
+        gridView.setAdapter(GridAdapter);
+
+        /*gridView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ImageItem item = (ImageItem) parent.getItemAtPosition(position);
+                //Create intent
+                Intent intent = new Intent(getApplicationContext(), DetailsActivity.class);
+                intent.putExtra("title", item.getTitle());
+                //intent.putExtra("image", item.getImage());
+
+                //Start details activity
+                startActivity(intent);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });*/
+
+        gridView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                Log.d("grid", "klik");
+                long viewId = v.getId();
+
+                ImageItem item = (ImageItem) parent.getItemAtPosition(position);
+                //Create intent
+                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
+                intent.putExtra("title", item.getTitle());
+                //intent.putExtra("image", item.getImage());
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                Bitmap bitmap = item.getImage();
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                byte[] bytes = stream.toByteArray();
+                intent.putExtra("image", bytes);
+
+                float rating = getIntent().getFloatExtra("rating", 0f);
+
+                //Start details activity
+                startActivity(intent);
+
+            }
+
+        });
+
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    private ArrayList<ImageItem> getData() {
+        final ArrayList<ImageItem> imageItems = new ArrayList<ImageItem>();
+        // retrieve String drawable array
+        TypedArray imgs = getResources().obtainTypedArray(R.array.image_ids);
+        for (int i = 0; i < imgs.length(); i++) {
+            Bitmap bitmap = BitmapFactory.decodeResource(this.getResources(),
+                    imgs.getResourceId(i, -1));
+            imageItems.add(new ImageItem(bitmap, "Picture " + i));
         }
 
-        return super.onOptionsItemSelected(item);
+        return imageItems;
+
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();  // Always call the superclass
+
+        // Stop method tracing that the activity started during onCreate()
+        android.os.Debug.stopMethodTracing();
+    }
+
 }
