@@ -23,10 +23,6 @@ public class MainActivity extends Activity {
     private GridView gridView;
     private GridViewAdapter GridAdapter;
 
-    RatingBar rb1;
-    SharedPreferences wmbPreference1;
-    SharedPreferences.Editor editor;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
