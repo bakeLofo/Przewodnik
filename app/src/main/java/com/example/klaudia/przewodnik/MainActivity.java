@@ -74,8 +74,6 @@ public class MainActivity extends Activity {
                 byte[] bytes = stream.toByteArray();
                 intent.putExtra("image", bytes);
 
-               // float rating = getIntent().getFloatExtra("rating", 0f);
-
                 //Start details activity
                 startActivity(intent);
 
