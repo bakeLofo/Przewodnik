@@ -19,4 +19,18 @@
         android:padding="10dp"
         android:textColor="#fff"
         android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opis "
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapa"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>
