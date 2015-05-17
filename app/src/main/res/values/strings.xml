@@ -7,5 +7,6 @@
     <string name="title_activity_details">Opis</string>
     <string name="title_activity_main">Przewodnik po Wroclawiu</string>
     <string name="title_activity_trasy">Trasy</string>
+    <string name="title_actvity_trasa">Szczegoly_trasy</string>
 
 </resources>

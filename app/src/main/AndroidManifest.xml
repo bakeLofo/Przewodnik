@@ -27,6 +27,10 @@
             android:name="com.example.klaudia.przewodnik.TrasyActivity"
             android:label="@string/title_activity_trasy" >
         </activity>
+        <activity
+            android:name="com.example.klaudia.przewodnik.TrasaDetails"
+            android:label="@string/title_actvity_trasa" >
+        </activity>
     </application>
 
 </manifest>
