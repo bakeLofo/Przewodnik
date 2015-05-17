@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <ImageView
         android:id="@+id/image"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:layout_gravity="center"/>
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_below="@+id/image"
         android:background="#00000c"
-        android:padding="10dp"
         android:textColor="#fff"
-        android:textSize="20dp" />
+        android:gravity="center"
+        android:textSize="30dp" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Opis "
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textSize="35sp"
         android:id="@+id/button3"
-        android:layout_gravity="center_horizontal" />
+        android:layout_below="@+id/title"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Mapa"
+        android:textSize="35sp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/title"
         android:id="@+id/button4"
-        android:layout_gravity="center_horizontal" />
-</LinearLayout>
+        android:layout_gravity="right" />
+</RelativeLayout>
