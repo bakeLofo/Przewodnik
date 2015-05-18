@@ -8,5 +8,11 @@
     <string name="title_activity_main">Przewodnik po Wroclawiu</string>
     <string name="title_activity_trasy">Trasy</string>
     <string name="title_actvity_trasa">Szczegoly_trasy</string>
+    <string name="trasa1">Dlugosc trasy: \nCzas:</string>
+    <string name="trasaa1">Opis trasy dla milosnikow sztuki</string>
+    <string name="trasa2">Dlugosc trasy: \nCzas:</string>
+    <string name="trasaa2">Opis trasy dla aktywnych</string>
+    <string name="trasa3">Dlugosc trasy: \nCzas:</string>
+    <string name="trasaa3">Opis trasy dla zakochanych</string>
 
 </resources>
