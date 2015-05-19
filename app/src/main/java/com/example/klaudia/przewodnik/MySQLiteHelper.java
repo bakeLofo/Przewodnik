@@ -86,7 +86,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 
         values.put("_id", 8);
         values.put("title", "\n Ogród botaniczny");
-        values.put("descriptions", "Muzeum Przyrodnicze Uniwersytetu Wrocławskiego z przyległym Ogrodem Botanicznym jest najstarszą i największą tego typu instytucją w kraju. Muzeum istnieje od 1814 r. a w swoich kolekcjach posiada wiele unikatowych okazów zwierząt wymarłych i rzadkich takich jak np: wilk workowaty. Jednym z najcenniejszych eksponatów w kolekcji muzeum jest szkielet wymarłego przed 10 tys. lat jelenia olbrzymiego i jedyny w kraju kompletny szkielet płetwala błękitnego.");
+        values.put("descriptions", "Ogród Botaniczny Uniwersytetu Wrocławskiego, nazywany oazą piękna i spokoju w sercu wielkiego miasta, to \"żywe muzeum\", a zarazem ośrodek naukowy i dydaktyczny oraz ulubione miejsce wypoczynku wrocławian. Położony jest po północnej stronie katedry Św. Jana Chrzciciela i kościoła Św.Krzyża, częściowo w obrębie historycznego Ostrowa Tumskiego, w odległości ok. 2 km od Rynku. Jest drugim (po ogrodzie krakowskim) najstarszym tego typu ogrodem w Polsce, wpisanym na listę zabytków woj. dolnośląskiego i mieszczącym się w granicach podlegającego szczególnej ochronie historycznego centrum Wrocławia.");
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
         values.put("_id", 9);

@@ -16,7 +16,7 @@ import android.widget.ListView;
 public class TrasyActivity extends ListActivity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        String[] values = new String[] { "Dla milosnikow sztuki","Dla aktywnych", "Dla zakochanych" };
+        String[] values = new String[] { "Dla miłośników sztuki","Dla aktywnych", "Dla zakochanych" };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, values);
         setListAdapter(adapter);
