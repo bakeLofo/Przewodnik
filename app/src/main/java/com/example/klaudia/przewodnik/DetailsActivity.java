@@ -7,6 +7,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
@@ -23,7 +25,7 @@ public class DetailsActivity extends Activity{
 
         wmbPreference1 = PreferenceManager.getDefaultSharedPreferences(this);
 
-        String title = getIntent().getStringExtra("title");
+        final String title = getIntent().getStringExtra("title");
         //Bitmap bitmap = getIntent().getParcelableExtra("image");
         byte[] bytes = getIntent().getByteArrayExtra("image");
         Bitmap bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
@@ -34,6 +36,16 @@ public class DetailsActivity extends Activity{
         ImageView imageView = (ImageView) findViewById(R.id.image);
         imageView.setImageBitmap(bmp);
         //imageView.setImageResource(R.drawable.image_1);
+
+        final Button opisyButton = (Button) findViewById(R.id.button3);
+        opisyButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailsActivity.this, DescriptionsActivity.class);
+                intent.putExtra("title", title);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

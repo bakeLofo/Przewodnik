@@ -14,5 +14,6 @@
     <string name="trasaa2">Opis trasy dla aktywnych</string>
     <string name="trasa3">Dlugosc trasy: \nCzas:</string>
     <string name="trasaa3">Opis trasy dla zakochanych</string>
+    <string name="title_activity_descriptions">Opisy</string>
 
 </resources>
