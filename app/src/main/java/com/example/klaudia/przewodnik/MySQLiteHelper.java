@@ -85,7 +85,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
         values.put("_id", 8);
-        values.put("title", "\n Ogród botaniczny ");
+        values.put("title", "\n Ogród botaniczny");
         values.put("descriptions", "Muzeum Przyrodnicze Uniwersytetu Wrocławskiego z przyległym Ogrodem Botanicznym jest najstarszą i największą tego typu instytucją w kraju. Muzeum istnieje od 1814 r. a w swoich kolekcjach posiada wiele unikatowych okazów zwierząt wymarłych i rzadkich takich jak np: wilk workowaty. Jednym z najcenniejszych eksponatów w kolekcji muzeum jest szkielet wymarłego przed 10 tys. lat jelenia olbrzymiego i jedyny w kraju kompletny szkielet płetwala błękitnego.");
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
