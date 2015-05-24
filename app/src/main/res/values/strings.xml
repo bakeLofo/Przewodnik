@@ -30,5 +30,7 @@
      3) Po takich chwilach uniesień pora na wyciszenia na łonie przyrody. Idealnym do tego celu jest pobliski Ogród Botaniczny. Czas spaceru: ok. 1h
     </string>
     <string name="title_activity_descriptions">Opisy</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_krasnale">Mapa krasnali</string>
 
 </resources>

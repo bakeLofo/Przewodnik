@@ -33,12 +33,6 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase database) {
         database.execSQL(DATABASE_CREATE);
 
-      // database.execSQL("INSERT or replace INTO "+TABLE_DESCRIPTION+  " (" + COLUMN_ID + TITLE + COLUMN_DESCRIPTION + " ) " +" VALUES (1, 'Rynek', 'wszystkim śliczne zabytkowe kamienice (np. Pod Gryfami, Pod Złotym Słońcem, Pod Siedmioma Elektorami, Pod Złotym Dzbanem, Pod Zieloną Dynią) – podobne jak w Gdańsku czy Sztokholmie (wszystkie miasta należały do grupy miast Hanzy), które go otaczają. Tutaj też znajduje się Nowy Ratusz, Ratusz z XIII wieku wyróżnia się pięknymi elementami dekoracyjnymi i wieżą z zegarem astronomicznym (na parterze zobaczymy najstarszą karzmę w mieście, mieści się tu także oddział Muzeum Miejskiego – Muzeum Sztuki Mieszczańskiej). Ogromną atrakcją turystyczną w pobliżu Rynku są także dwa budynki zwane „Jaś i Małgosia” – małe, urocze domki połączone ze sobą barokową bramą i znajdujące się tuż przy okazałym kościele św. Elżbiety z tarasem widokowym na wieży. Na Rynku można spotkać także małe krasnale ( z resztą nie tylko tam, figurki małych ludzików w czapeczkach możemy dostrzec w wielu miejscach w mieście).Na uwagę zasługuje także przyległy do Rynku dawny plac targowy zwany Solnym – gdzie obok licznych handlarek sprzedających kolorowe kwiaty znajduje się także XIV – wieczny kościół świętej Marii Magdaleny. ' ) ");
-       //database.execSQL("INSERT INTO "+TABLE_DESCRIPTION+" VALUES (1, 'Ratusz', 'Wrocławski Ratusz, późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia. Współcześnie Ratusz mieści oddział wrocławskiego Muzeum Miejskiego, Muzeum Sztuki Mieszczańskie. W piwnicach Ratusza znajduje się Piwnica Świdnicka, jeden z najstarszych lokali gastronomicznych w Europie.' ) ");
-       // database.execSQL("INSERT INTO "+TABLE_DESCRIPTION+" VALUES (1, 'Ratusz', '' ) ");
-
-
-
         ContentValues values = new ContentValues();
 
         values.put("_id", 1);
@@ -105,7 +99,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
         values.put("_id", 12);
-        values.put("title", "Stadion \n miejski");
+        values.put("title", "\n Stadion miejski");
         values.put("descriptions", "Stadion Miejski we Wrocławiu, stadion piłkarski, stanowiący własność miasta Wrocław. Głównym użytkownikiem areny jest klub piłkarski Śląsk Wrocław. Stadion był jedną z aren Euro 2012 - rozegrane na nim zostały trzy mecze fazy grupowej (w tym jeden Reprezentacji Polski - 16 czerwca 2012 roku)." );
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
@@ -125,7 +119,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
         values.put("_id", 16);
-        values.put("title", "Teatr \n Capitol");
+        values.put("title", "\n Teatr Capitol");
         values.put("descriptions", "Teatr powstały we Wrocławiu w 2004 roku jako kontynuacja działalności Teatru Muzycznego – Operetki Wrocławskiej w budynku przedwojennego kinoteatru Capitol zbudowanego w 1929 roku. Po II wojnie światowej mieściło się tutaj kino \"Śląsk\". Teatr jest jednostką kulturalną Samorządu Miasta Wrocławia." );
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
@@ -135,7 +129,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 
         values.put("_id", 18);
-        values.put("title", "Pałac \n Królewski");
+        values.put("title", "\n Pałac Królewski");
         values.put("descriptions", "Pałac królewski we Wrocławiu, także pałac Spätgenów lub zamek królów pruskich, zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów. W 2009 w pałacu otwarte zostało Muzeum Miejskie z barokowym ogrodem. Część budynku zajmują odrestaurowane komnaty królewskie. Na wystawie \"1000 lat Wrocławia\" prezentowanych jest prawie trzy tysiące eksponatów, wiele z nich ze zbiorów polskich i niemieckich kolekcjonerów." );
         database.insertWithOnConflict(TABLE_DESCRIPTION, null, values, SQLiteDatabase.CONFLICT_REPLACE);
 

@@ -45,6 +45,29 @@ public class DetailsActivity extends Activity{
                 startActivity(intent);
             }
         });
+//----------------------------------------------------
+        final Button mapyButton = (Button) findViewById(R.id.button4);
+        if (title.equals("Wrocławskie krasnale")) {
+            mapyButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(DetailsActivity.this, KrasnaleActivity.class);
+                    intent.putExtra("title", title);
+                    startActivity(intent);
+                }
+            });
+        }
+        else
+        {
+            mapyButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(DetailsActivity.this, MapsActivity.class);
+                    intent.putExtra("title", title);
+                    startActivity(intent);
+                }
+            });
+        }
+
+        //---------------------------------------------
 
     }
 

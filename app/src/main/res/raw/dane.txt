@@ -1,0 +1,64 @@
+Rynek
+51.1094543
+17.0313322
+Ratusz
+51.109573
+17.03206
+Ostrów Tumski
+51.114441
+17.0461678
+Panorama Racławicka
+51.110129
+17.044343
+
+Hala Stulecia
+51.106869
+17.077285
+Ogród zoologiczny i Afrykarium
+51.104126
+17.074197
+
+Ogród japoński
+51.109937
+17.080076
+
+Ogród botaniczny
+51.1159405
+17.0474117
+Pergola i fontanna multimedialna
+51.107975
+17.077861
+Narodowe Forum Muzyki
+51.1077493
+17.0259963
+
+Opera
+51.105654
+17.031247
+
+Stadion miejski
+51.141217
+16.943794
+Sky Tower
+51.095117
+17.019418
+Hala Targowa
+51.112474
+17.040275
+Dworzec Gł.PKP
+51.098946
+17.036571
+
+Teatr Capitol
+51.1008
+17.029956
+Bazylika Św.Elżbiety
+51.111488
+17.030321
+
+Pałac Królewski
+51.107664
+17.029057
+Kolejka linowa „Polinka”
+51.1067713
+17.0565117
