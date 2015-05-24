@@ -8,26 +8,26 @@
     <string name="title_activity_main">Przewodnik po Wroclawiu</string>
     <string name="title_activity_trasy">Trasy</string>
     <string name="title_actvity_trasa">Szczegoly_trasy</string>
-    <string name="trasa1">Dlugosc trasy: ok. 6km \nCzas: 4h- 8h</string>
-    <string name="trasaa1">Wszystkie obiekty znajdują się w obrębie ścisłego centrum Wrocławia.Odległości między poszczególnymi zabytkami oscylują między 1-2km, dlatego też kolejność zwiedzania jest zamienna, ale proponujemy:\n
-1) Najpierw obejrzeć Panoramę Racławicką.Potrzebny czas na zwiedzanie to około 1,5h.\n
-2) Następnie zobaczmy Bayzlikę św. Elżbiety. Potrzebny czas na zwiedzanie to około 1h.\n
-3) Potem udajemy się do Pałacu Królewskiego. Tam spędzamy około 2h.\n
-4) Wieczorem czas na relaks, a zatem Opera. Warto wybrać się na wieczorne przedstawienie: w zależności od wybranego czas trawania 1h-3h.\n
-5) Lub możemy odwiedzić Teat Capitol. Warto zobaczyć nowoczesny budynek i wybrać się na przedstawienie.</string>
-    <string name="trasa2">Dlugosc trasy: ok.10km \nCzas: cały dzień</string>
-    <string name="trasaa2">Trasa dla aktywnych przewidziana jest na cały dzień ze względu na długi czas potrzebny na zwiedzanie poszczególnych obiektów na liści. Wymaga też dobrej kondycji fizycznej i chętnych do długich spacerów nóg.
-    Proponujemy zobaczyć w kolejności:\n
-    1) Ogród zoologiczny i Afrykarium :przy takiej mnogości fauny zwiedzanie zajmie co najmniej parę godzin.\n
-    2) Tuż obok znajduje się słynna Hala Stulecia.\n
-    3) Będąc pod Halą trudno zignorować przepiekną Pergolę i towarzyszącą jej fontannę multimedialną.Warto pojawić się o pełnej godzinie, aby zobaczyć multimedialny pokaz.\n
-    4) Po chwilu odpoczynku przy pokazie fontanny możemy udać się na dalszy spacer, tym razem do pobliskiego ogrodu japońskiego ze ślicznymi okazami orientalnej roślinności.
+    <string name="trasa1">Dlugość trasy: ok. 6km \nCzas: 4h- 8h\n</string>
+    <string name="trasaa1">Wszystkie obiekty znajdują się w obrębie ścisłego centrum Wrocławia.Odległości między poszczególnymi zabytkami oscylują między 1-2km, dlatego też kolejność zwiedzania jest zamienna, ale proponujemy:\n\n
+1) Najpierw obejrzeć Panoramę Racławicką.Potrzebny czas na zwiedzanie to około 1,5h.\n\n
+2) Następnie zobaczmy Bayzlikę św. Elżbiety. Potrzebny czas na zwiedzanie to około 1h.\n\n
+3) Potem udajemy się do Pałacu Królewskiego. Tam spędzamy około 2h.\n\n
+4) Wieczorem czas na relaks, a zatem Opera. Warto wybrać się na wieczorne przedstawienie: w zależności od wybranego czas trawania 1h-3h.\n\n
+5) Lub możemy odwiedzić Teatr Capitol. Warto zobaczyć nowoczesny budynek i wybrać się na przedstawienie.\n</string>
+    <string name="trasa2">Dlugość trasy: ok.10km \nCzas: cały dzień\n</string>
+    <string name="trasaa2">Trasa dla aktywnych przewidziana jest na cały dzień ze względu na długi czas potrzebny na zwiedzanie poszczególnych obiektów na liście. Wymaga też dobrej kondycji fizycznej i chętnych do długich spacerów nóg.
+    Proponujemy zobaczyć w kolejności:\n\n
+    1) Ogród zoologiczny i Afrykarium: przy takiej mnogości fauny zwiedzanie zajmie co najmniej parę godzin.\n\n
+    2) Tuż obok znajduje się słynna Hala Stulecia.\n\n
+    3) Będąc pod Halą trudno zignorować przepiekną Pergolę i towarzyszącą jej fontannę multimedialną.Warto pojawić się o pełnej godzinie, aby zobaczyć multimedialny pokaz.\n\n
+    4) Po chwilu odpoczynku przy pokazie fontanny możemy udać się na dalszy spacer, tym razem do pobliskiego ogrodu japońskiego ze ślicznymi okazami orientalnej roślinności.\n
     </string>
-    <string name="trasa3">Dlugosc trasy: 5km\nCzas: 5h</string>
-    <string name="trasaa3"> Wrocław szczególnie sprzyja parom. Zawiera wiele romantycznych miejsc, gdzie można bez końca spacerować. My polecamy szybką trasę składająca się z:\n
-     1) Rynek. Któż nie chciałby poczuć się jak w danej epoce. Dzięki zabytkowym kamienicom otaczającym Rynek we Wrocławiu jest to możliwe. Warto odwiedzić też znajdujące sie w nich liczne klimatyczne kawiarenki i restauracje. Czas zwiedzania: ok 3h\n
-     2) Po wrażeniach z serca Wrocławia, warto przenieść się do jego najstarszej historycznie części. Mowa tu o Ostrowie Tumskim. Kogo nie zachwyci architektura Katedry, na pewno ujmie urok naodrzańskich Bulwarów i słynnego mostu Tumskiego zwanego mostem zakochanych. Czas zwiedzania: ok.1h\n
-     3) Po takich chwilach uniesień pora na wyciszenia na łonie przyrody. Idealnym do tego celu jest pobliski Ogród Botaniczny. Czas spaceru: ok. 1h
+    <string name="trasa3">Dlugość trasy: 5km\nCzas: 5h\n</string>
+    <string name="trasaa3"> Wrocław szczególnie sprzyja parom. Zawiera wiele romantycznych miejsc, gdzie można bez końca spacerować. My polecamy szybką trasę składająca się z:\n\n
+     1) Rynek. Któż nie chciałby poczuć się jak w danej epoce. Dzięki zabytkowym kamienicom otaczającym Rynek we Wrocławiu jest to możliwe. Warto odwiedzić też znajdujące sie w nich liczne klimatyczne kawiarenki i restauracje. Czas zwiedzania: ok 3h\n\n
+     2) Po wrażeniach z serca Wrocławia, warto przenieść się do jego najstarszej historycznie części. Mowa tu o Ostrowie Tumskim. Kogo nie zachwyci architektura Katedry, na pewno ujmie urok naodrzańskich Bulwarów i słynnego mostu Tumskiego zwanego mostem zakochanych. Czas zwiedzania: ok.1h\n\n
+     3) Po takich chwilach uniesień pora na wyciszenia na łonie przyrody. Idealnym do tego celu jest pobliski Ogród Botaniczny. Czas spaceru: ok. 1h\n
     </string>
     <string name="title_activity_descriptions">Opisy</string>
     <string name="title_activity_maps">Mapa</string>
