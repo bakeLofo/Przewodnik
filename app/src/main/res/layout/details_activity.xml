@@ -45,4 +45,11 @@
         android:layout_below="@+id/title"
         android:id="@+id/button4"
         android:layout_gravity="right" />
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/button3" />
 </RelativeLayout>

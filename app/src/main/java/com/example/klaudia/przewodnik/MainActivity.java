@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     private GridView gridView;
     private GridViewAdapter GridAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +71,7 @@ public class MainActivity extends Activity {
                 byte[] bytes = stream.toByteArray();
                 intent.putExtra("image", bytes);
 
+                getIntent().getFloatExtra("rating", 0f);
                 //Start details activity
                 startActivity(intent);
 

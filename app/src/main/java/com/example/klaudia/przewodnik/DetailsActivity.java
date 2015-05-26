@@ -15,16 +15,24 @@ import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.TextView;
 
-public class DetailsActivity extends Activity{
+public class DetailsActivity extends Activity implements OnRatingBarChangeListener
+{
 
+    RatingBar rb1;
     SharedPreferences wmbPreference1;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details_activity);
 
+        rb1 = (RatingBar)findViewById(R.id.ratingBar1);
+
+        ((RatingBar) findViewById(R.id.ratingBar1)).setOnRatingBarChangeListener(this);
         wmbPreference1 = PreferenceManager.getDefaultSharedPreferences(this);
+        float rating = wmbPreference1.getFloat(getIntent().getStringExtra("title"), 0f);
+        rb1.setRating(rating);
 
         final String title = getIntent().getStringExtra("title");
         Bitmap bitmap = getIntent().getParcelableExtra("image");
@@ -73,6 +81,13 @@ public class DetailsActivity extends Activity{
 
     }
 
+    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+        final int numStars = ratingBar.getNumStars();
+        editor = wmbPreference1.edit();
+        editor.putFloat(getIntent().getStringExtra("title"), rating);
+        editor.commit();
+        //int ratings = wmbPreference1.getInt("numStars", 0);
+    }
 
 
 }
